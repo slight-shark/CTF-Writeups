@@ -2,7 +2,7 @@
 
 We are given a nice image of a painting spot.
 
-![Sick view, bro](./paintingSpot.jpg)
+![Sick view, bro](./assets/paintingSpot.jpg)
 
 Let's take a look at the metadata and see if there's anything of value. We make use of `ExifTool` to get this job done.
 

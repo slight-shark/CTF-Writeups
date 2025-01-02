@@ -20,11 +20,7 @@ One is immediately tempted to do Binary Search, checking if the factor lies in t
 Instead, I opted to do _bucketting_. This technique makes us check the 20000 public keys in groups. We multiply the numbers $m_{10k+1}$ to  $m_{10k+10}$ to form $M_k$. We then query $\gcd(n_i, M_k)$. If this is a factor of $n_i$, we can just output that, and move on to the next number. If it outputs $n$, we may just check all 10 of them to find a factor. 
 
 This reduces the amount of time needed to query everything to about 7 seconds (locally), giving us enough time to read and output the factors. 
-
-_The code is found in [here](./assets/thatsALotOfRSA/solve.py)_
-
 ```py
-
 #print(open('Crypto/crypto_thatsALotOfRSA/pubkeys/key_00000.pem').read())
 
 import os
