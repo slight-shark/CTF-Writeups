@@ -1,7 +1,8 @@
 name: Re-deploy Site
 
 on:
-  push: ['master']
+  push:
+    branches: ["master"]
 
   workflow_dispatch:
 
